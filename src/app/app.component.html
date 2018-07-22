@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<md-toolbar color="#839192" class="toolbar proText">
+  <img src = '/assets/mslogo.jpg'>{{title}}
+  <span class="spacer"></span>
+
+  <button md-button routerLink="/home">
+    <span>Home</span>
+    </button>
+    <button md-button routerLink="/bio">
+    <span>Bio</span>
+    </button>
+     <button md-button routerLink="/service">
+    <span>Services</span>
+    </button>
+</md-toolbar>
+
+ 
+ <div class="flex-container" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutAlign.xs="start">
+  <div class="flex-item" fxFlex="10%" fxFlex.xs="0%"></div>
+  <div class="flex-item" fxFlex="80%" fxFlex.xs="100%">
+    <router-outlet></router-outlet>
+  </div>
+ <div class="flex-item" fxFlex="10%" fxFlex.xs="0%"></div> 
+</div> 
+
+<md-toolbar color="#839192" class="toolbar proText" style="margin-top:30px;">
+  Contact:
+  <p>
+  <i class="fa fa-phone"></i> 876-555-5555     
+  </p>
+  
+  <p>
+  <i class="fa fa-phone"></i> 876-777-5555     
+  </p>
+  
+  <p>
+  <i class="fa fa-envelope"></i> projexsolutions2018@gmail.com
+  </p>
+  
+</md-toolbar>
+
